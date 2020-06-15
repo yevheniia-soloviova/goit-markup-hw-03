@@ -48,6 +48,12 @@ body {
   outline: 2px solid teal;
 }
 
+.container-one {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 /* Section */
 .section {
   padding-top: 94px;
@@ -101,7 +107,18 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav.list {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav.list :not(:last-child) {
+  margin-right: 40px;
+}
+
 .contact-nav {
+  display: flex;
+  margin-left: 30px;
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -153,6 +170,8 @@ a {
 /* Features */
 
 .features {
+  display: flex;
+  flex-wrap: wrap;
   background-color: var(--primary-background-color);
 }
 
@@ -243,6 +262,30 @@ a {
   visibility: hidden;
 }
 
+.flex-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-element {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.flex-element:nth-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .our .list {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -270,11 +313,13 @@ a {
   line-height: 1, 63px;
   text-align: center;
 
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  margin-right: 8px;
   min-width: 73px;
   border-radius: 4px;
 }
