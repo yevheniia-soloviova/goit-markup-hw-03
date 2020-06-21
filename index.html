@@ -10,12 +10,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container-one">
+      <div class="container main-nav">
       <nav class="logo">
         <a href="index.html" class="logo-header">
           <span class="accent">Web</span> Studio</a>
@@ -25,23 +25,26 @@
           <li class="item"><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
-        <a href="mailto:=info@devstudio.com" class="contact-nav"
-          >info@devstudio.com</a>
+      <address>
+        <a href="mailto:=info@devstudio.com" class="contact-nav">info@devstudio.com</a>
         <a href="tel:+380961111111" class="contact-nav">+38 096 111 11 11</a>
+      </address>
       </div>
     </header>
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button-primary">Заказать улугу </button>
+        <button class="button-primary">Заказать уcлугу </button>
       </section>
       <section class="features">
         <div class="container">
         <ul class="feature list">
           <li class="item">
+            <div class="features-img">
             <a href="#">
               <img src="./images/antenna 1.svg" alt="Антенна" width="70"
             /></a>
+            </div>
             <h3 class="feature-title">Внимание к деталям</h3>
             <p class="feature-text">
               Идейные соображения, а также <br />
@@ -50,9 +53,11 @@
             </p>
           </li>
           <li class="item">
+            <div class="features-img">
             <a href="#">
               <img src="./images/clock 1.svg" alt="Часы" width="70"
             /></a>
+            </div>
             <h3 class="feature-title">Пунктуальность</h3>
             <p class="feature-text">
               Задача организации, в особенности <br />
@@ -61,9 +66,11 @@
             </p>
           </li>
           <li class="item">
+            <div class="features-img">
             <a href="#">
               <img src="./images/diagram 1.svg" alt="Диаграмма" width="70" />
             </a>
+            </div>
             <h3 class="feature-title">Планирование</h3>
             <p class="feature-text" >
               Равным образом консультация с <br />
@@ -72,9 +79,11 @@
             </p>
           </li>
           <li class="item">
+            <div class="features-img">
             <a href="#">
               <img src="./images/astronaut 1.svg" alt="Астронавт" width="70" />
             </a>
+            </div>
             <h3 class="feature-title">Современные технологии</h3>
             <p class="feature-text">
               Значимость этих проблем настолько <br />
@@ -85,10 +94,10 @@
         </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
-        <h2 class="work">Чем мы занимаемся</h2>
-        <ul class="work list">
+      <section class="work">
+        <div class="work-container">
+        <h2 class="work-name">Чем мы занимаемся</h2>
+        <ul class="work-list list">
           <li class="item"><a href="#"><img src="./images/img (4).jpg" alt="desktop's apps" width="270"
             /></a>
             <h3 class="work-title">Десктопные приложения</h3>
@@ -105,11 +114,12 @@
       <section class="team">
         <div class="container">
         <h1 class="our-team">Наша команда</h1>
-        <ul class="list">
-          <li>
+        <ul class="command-list list">
+          <li class="team-item">
             <img src="./images/John Smith.jpg" alt="John Smith" width="270" />
             <h4 class="team-name">Николай Кучеренко</h4>
             <p class="team-title">Product Designer</p>
+            <div class="social-icons">
             <a href="#"
               ><img src="./images/Ellipse.svg" alt="Instagram" width="44"
             /></a>
@@ -122,12 +132,14 @@
             <a href="#"
               ><img src="./images/Ellipse (3).svg" alt="Linkedln" width="44"
             /></a>
+            </div>
           </li>
-          <li><img src="./images/Marta Stewart.jpg"
+          <li class="team-item"><img src="./images/Marta Stewart.jpg"
               alt=" Marta Stewart"
               width="270"/> 
               <h4 class="team-name">Ольга Иванова</h4>
             <p class="team-title">Frontend Developer</p>
+            <div class="social-icons">
             <a href="#"
               ><img src="./images/Ellipse.svg" alt="Instagram" width="44"
             /></a>
@@ -140,12 +152,14 @@
             <a href="#"
               ><img src="./images/Ellipse (3).svg" alt="Linkedln" width="44"
             /></a>
+            </div>
              </li>
-            <li><img src="./images/Robert Jakis.jpg"
+            <li class="team-item"><img src="./images/Robert Jakis.jpg"
               alt=" Robert Jakis"
               width="270"/>
             <h4 class="team-name">Андрей Шевченко</h4>
             <p class="team-title">Marketing</p>
+            <div class="social-icons">
             <a href="#"
               ><img src="./images/Ellipse.svg" alt="Instagram" width="44"
             /></a>
@@ -158,11 +172,13 @@
             <a href="#"
               ><img src="./images/Ellipse (3).svg" alt="Linkedln" width="44"
             /></a>
+            </div>
             </li>
-          <li>
+          <li class="team-item">
             <img src="./images/Martin Doe.jpg" alt=" Martin Doe" width="270" />
             <h4 class="team-name">Иван Николаев</h4>
             <p class="team-title">Ul Designer</p>
+            <div class="social-icons">
             <a href="#"
               ><img src="./images/Ellipse.svg" alt="Instagram" width="44"
             /></a>
@@ -175,36 +191,41 @@
             <a href="#"
               ><img src="./images/Ellipse (3).svg" alt="Linkedln" width="44"
             /></a>
+            </div>
           </li>
         </ul>
         </div>
       </section>
       <section>
+        <div class="container">
         <h4 class="customers">Постоянные клиенты</h4>
-        <ul class="list">
-          <li>
+        <ul class="client-list list">
+          <li class="item">
             <a href="#"><img src="./images/Client 1.svg" alt="лого1" /> </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./images/Client 2.svg" alt="лого2" /> </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./images/Client 3.svg" alt="лого3" /> </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./images/Client 4.svg" alt="лого4" /> </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./images/Client 5.svg" alt="лого5" /> </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./images/Client 6.svg" alt="лого6" /> </a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <section>
+        <div class="footer-content">
+        <div class="footer-contacts">
         <div class="logo">
           <a href="index.html" class="logo-footer">
             <span class="accent">Web</span> Studio</a>
@@ -217,18 +238,22 @@
             <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
           </div>
         </div>
-        <div>
+        </div>
+        <div class="social-network">
           <h3 class="join">Присоединяйтесь</h3>
           <ul class="list">
-            <li><a href="" class="follow-us">Instagram</a></li>
-            <li><a href="" class="follow-us">Twitter</a></li>
-            <li><a href="" class="follow-us">Facebook</a></li>
-            <li><a href="" class="follow-us">Linkedln</a></li>
+            <li class="social-icons">
+              <a href="#"><img src="./images/Ellipse -(1).svg" alt="Instagram" width="44" /></a>
+              <a href="#"><img src="./images/Ellipse -(2).svg" alt="Twitter" width="44" /></a>
+              <a href="#"><img src="./images/Ellipse -(3).svg" alt="Facebook" width="44" /></a>
+              <a href="#"><img src="./images/Ellipse - (4).svg" alt="Linkedln" width="44" /></a>
+            </li>
           </ul>
         </div>
-        <div>
-          <h3 class="sign">Подпишитесь на рассылку</h3>
+        <div class="sigh up">
+          <b class="sign">Подпишитесь на рассылку</b>
           <a href="#" class="button-primary">Подписаться</a>
+        </div>
         </div>
         <p class="copyright">2020|Developed by GoIT Students &copy;</p>
       </section>
