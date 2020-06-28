@@ -442,11 +442,11 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 94px;
 }
 
 .flex-element {
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
   background: var(--primary-white-color);
   border: 1px solid #eeeeee;
@@ -594,8 +594,8 @@ a {
 }
 
 .social-network.list {
-  display: flex;
   padding-right: 69px;
+  padding-bottom: 94px;
 }
 
 .social-icon {
@@ -604,6 +604,8 @@ a {
   justify-content: center;
   width: 48px;
   height: 48px;
+  left: 514px;
+  top: 1736px;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -639,6 +641,10 @@ a {
   line-height: 1, 14;
 }
 
+.subscribe {
+  display: flex;
+}
+
 .follow-us {
   color: var(--primary-text-color);
 }
@@ -646,12 +652,4 @@ a {
 b,
 strong {
   font-weight: bolder;
-}
-
-.copyright {
-  color: var(--copyright-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
 }
